@@ -6,13 +6,13 @@
     "tweet": "https://twitter.com/akashch70311587",
     "git": "https://github.com/meetakc2422",
     "mail_user":"akashchauhan@encryptedvisions.com",
-    "mail_pwd": "Mayaka$2020",
+    "mail_pwd": "ur mail pwd",
     "about_me":  "Welcome to this blog , here we will be sharing much about various Data science topics",
     "no. of posts": 3,
     "blog_name": "Encrypted Visions",
     "login_image": "login.svg",
-    "admin_user": "meetakc2422",
-      "admin_password": "Mayaka$2020",
+    "admin_user": "ur admin ",
+      "admin_password": "ur pwd",
     "upload_location": "C:\\Users\\akash\\PycharmProjects\\flask_tutorial\\static"
 }
 }
