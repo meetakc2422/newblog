@@ -1,0 +1,18 @@
+{
+  "params": {"local_server": "True",
+  "local_uri": "mysql+pymysql://root:@localhost/akash's blog",
+    "prod_uri": "mysql+pymysql://root:@localhost/akash's blog",
+    "facebook": "https://www.facebook.com/Encrypted-Visions-113842983656019",
+    "tweet": "https://twitter.com/akashch70311587",
+    "git": "https://github.com/meetakc2422",
+    "mail_user":"akashchauhan@encryptedvisions.com",
+    "mail_pwd": "Mayaka$2020",
+    "about_me":  "Welcome to this blog , here we will be sharing much about various Data science topics",
+    "no. of posts": 3,
+    "blog_name": "Encrypted Visions",
+    "login_image": "login.svg",
+    "admin_user": "meetakc2422",
+      "admin_password": "Mayaka$2020",
+    "upload_location": "C:\\Users\\akash\\PycharmProjects\\flask_tutorial\\static"
+}
+}

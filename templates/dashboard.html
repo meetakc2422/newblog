@@ -1,0 +1,76 @@
+
+{% extends "layout.html" %}
+{% block body %}
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{{url_for('static',filename = 'img/coding.jpg')}}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Admin Space</h1>
+            <span class="subheading">Manage your posts       
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <h1>Basic Actions</h1>
+        <a href="/edit/0"><button class="btn btn-primary"> Add a new post</button></a> 
+        <a href="/logout"><button class="btn btn-primary"> Logout</button></a>
+<hr>
+        <h1>Upload a file</h1>
+        
+            <form action = "/uploader" method ="post" enctype="multipart/form-data">
+
+<input type="file" name="file1">
+<button type="submit" class= "btn btn-primary">Submit</button>
+        
+            </form>
+          <hr>
+<h2>Access your posts</h2>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th>Sno</th>
+        <th>Title</th>
+        <th>Date</th>
+        <th>Edit</th>
+        <th>Delete</th>
+
+      </tr>
+    </thead>
+    <tbody>
+
+      {% for post in posts %}
+      <tr>
+        <td>{{post.Sno}}</td>
+        <td>{{post.Title}}</td>
+        <td>{{post.Date}}</td>
+        <td><a href="/edit/{{post.Sno}}"><button class = "btn btn-primary">Edit</a></button></td>
+        <td><a href="/delete/{{post.Sno}}"><button class = "btn btn-primary">Delete</button><a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+        
+        
+<!--  -->
+        
+        
+        <!-- Pager -->
+        <div class="clearfix">
+          <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+  
